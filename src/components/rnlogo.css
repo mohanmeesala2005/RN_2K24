@@ -1,0 +1,13 @@
+.img{
+    width: 40vw;
+    height: 100vh;
+   float:right;
+   object-fit: cover;
+}
+
+.main_about{
+    width: 60vw;
+    height: 100vh;
+    float:left;
+    margin-top:70px;
+}

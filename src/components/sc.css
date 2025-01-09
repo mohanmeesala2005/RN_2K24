@@ -1,0 +1,14 @@
+.heading{
+	display:flex;
+  justify-content: center;
+	text-align: center;
+	background: linear-gradient(to right, rgb(148, 0, 247),rgb(100, 0, 249));
+	color: aliceblue;
+	font-size: 6vh;
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 25px;
+}

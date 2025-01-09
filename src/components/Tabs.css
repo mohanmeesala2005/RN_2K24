@@ -1,0 +1,215 @@
+
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1;
+  color: #423E37;
+}
+
+/* Layout */
+.page {
+  width: 100vw;
+  height: 100vh;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+/* Tabs */
+.tabs-controls {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  margin: 0 auto;
+  padding: 50px 0 20px;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.tabs-controls__item {
+  flex-shrink: 0; /* Prevent the items from shrinking */
+}
+
+.tabs-controls__link {
+  display: block;
+  padding: 16px 32px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff6e6;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap; /* Prevent the text from wrapping */
+}
+
+.tabs-controls__link:after {
+  display: block;
+  width: 0;
+  height: 4px;
+  background-color: #423E37;
+  border-radius: 2px;
+  margin: auto;
+  content: '';
+  transition: width 0.4s;
+}
+
+.tabs-controls__link--active:after {
+  width: 100%;
+}
+
+/* Cards */
+.cards-container {
+  position: relative;
+  z-index: 1;
+  width: 40%;
+  height: calc(100vh - 205px);
+  margin: 0 auto;
+}
+
+.card {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  color:black;
+  font-weight: 500;
+  font-size: larger;
+  background-color: #ffffff;
+  border: 1px solid #423E37;
+  box-shadow: 9px 11px 3px 0px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 40px;
+  transition: transform 0.3s, opacity 0.2s;
+}
+.mem{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card.hidden {
+  z-index: 100;
+  background-color: #fff;
+  color: #ffffff;
+  opacity: 0;
+  transition: color 0.5s, background-color 0.5s, transform 1s, opacity 0.2s 0.4s;
+}
+
+.card.hidden h1 {
+  color: #fff;
+  transition: color 0.5s;
+}
+
+.card--current {
+  z-index: 101;
+}
+.card:nth-of-type(1) {
+  z-index: 15;
+  transform: translateX(0px) translateY(0px);
+}
+.card:nth-of-type(2) {
+  z-index: 14;
+  transform: translateX(10px) translateY(10px);
+}
+.card:nth-of-type(3) {
+  z-index: 13;
+  transform: translateX(20px) translateY(20px);
+}
+.card:nth-of-type(4) {
+  z-index: 12;
+  transform: translateX(30px) translateY(30px);
+}
+.card:nth-of-type(5) {
+  z-index: 11;
+  transform: translateX(40px) translateY(40px);
+}
+.card:nth-of-type(6) {
+  z-index: 10;
+  transform: translateX(50px) translateY(50px);
+}
+.card:nth-of-type(7) {
+  z-index: 9;
+  transform: translateX(60px) translateY(60px);
+}
+.card:nth-of-type(8) {
+  z-index: 8;
+  transform: translateX(70px) translateY(70px);
+}
+.card:nth-of-type(9) {
+  z-index: 7;
+  transform: translateX(80px) translateY(80px);
+}
+.card:nth-of-type(10) {
+  z-index: 6;
+  transform: translateX(90px) translateY(90px);
+}
+.card:nth-of-type(11) {
+  z-index: 5;
+  transform: translateX(100px) translateY(100px);
+}
+.card:nth-of-type(12) {
+  z-index: 4;
+  transform: translateX(110px) translateY(110px);
+}
+.card:nth-of-type(13) {
+  z-index: 3;
+  transform: translateX(120px) translateY(120px);
+}
+.card:nth-of-type(14) {
+  z-index: 2;
+  transform: translateX(130px) translateY(130px);
+}
+.card:nth-of-type(15) {
+  z-index: 1;
+  transform: translateX(140px) translateY(140px);
+}
+
+
+
+
+/* Random rotations and transformations for hidden cards */
+.card.hidden:nth-of-type(1) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(2) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(3) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(4) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(5) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(6) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(7) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(8) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(9) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(10) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(11) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(12) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(13) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(14) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(15) {
+  transform: rotate(-63deg) translateX(49%) translateY(-54%) scale(0.5) skewX(4deg) skewY(12deg);
+}
