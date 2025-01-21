@@ -2,12 +2,26 @@ import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './ProfileCard.css';
 
+const FacadCard = ({ imageSrc, name, role, mail ,phone }) => {
+  return (
+    <div className="facad_wrapper">
+      <img src={imageSrc} alt={name} />
+      <h2>{name}</h2>
+      <h3>{role}</h3> 
+      <ul>
+        <li><a href={`mailto:${mail}`}><i class="fa-regular fa-envelope"></i></a></li>
+        <li><a href={`tel:${phone}`}><i className="fa-solid fa-phone"  /></a></li> 
+      </ul>
+    </div>
+  );
+};
+
 const ProfileCard = ({ imageSrc, name, role, mail ,phone }) => {
   return (
     <div className="img-wrapper">
       <img src={imageSrc} alt={name} />
       <h2>{name}</h2>
-      <h3>{role}</h3>
+      <h3>{role}</h3> 
       <ul>
         <li><a href={`mailto:${mail}`}><i class="fa-regular fa-envelope"></i></a></li>
         <li><a href={`tel:${phone}`}><i className="fa-solid fa-phone"  /></a></li> 
@@ -17,19 +31,28 @@ const ProfileCard = ({ imageSrc, name, role, mail ,phone }) => {
 };
 
 const Card = () => {
+  const faculty =[
+    {
+      imageSrc: "../src/assets/TusharKanti.jpeg",
+      name: "Dr Tushar Kanti Bera",
+      role: "Associate Proffesor,EE,NITDGP",
+      mail: "tusharkanti.bera@ee.nitdgp.ac.in",
+      phone:"9448853308",
+    }
+  ]
   const teamMembers = [
 
     {
       imageSrc: "../src/assets/DebasmitaSaha.jpg",
       name: "Debasmita Saha",
-      role: "Event Management & Content Writing",
+      role: "Event Management",
       mail: "sdebasmita2005@gmail.com ",
       phone:"9748036639",
     },
     {
       imageSrc: "../src/assets/-iwvq7r.jpg",
       name: "Anurag Ray",
-      role: "Public Speaking & Event Management",
+      role: "Public Speaking",
       mail:"anurag.ray2005@gmail.com ",
       phone:" 9836530276",
     },
@@ -43,42 +66,42 @@ const Card = () => {
     {
       imageSrc: "../src/assets/Arohan.jpg",
       name: "Swastik Roy",
-      role: "Graphic Design & Video Editing",
+      role: "Video Editing",
       mail:"royswastik047@gmail.com",
       phone:"8101858528",
     },
     {
       imageSrc: "../src/assets/IMG-20240814-WA0017.jpg",
       name: "MMK Lechler",
-      role: "Event Management & Public Speaking",
+      role: "Event Management",
       mail:"floramosses123@gmail.com",
       phone:'9381072245',
     },
     {
       imageSrc: "../src/assets/IMG_3211.JPG",
       name: "Animesh",
-      role: "Public Speaking & Event Management",
+      role: "Public Speaking",
       mail:"animeshsatyapragyanpatra@gmail.com ",
       phone:"9337269060",
     },
     {
       imageSrc: "../src/assets/SayantanBanerjee.jpg",
       name: "Sayantan banerjee",
-      role: "Content Writing & Event Management",
+      role: "Content Writing",
       mail:"sayantanbanerjee2022@gmail.com",
       phone:"8240679056",
     },
     {
       imageSrc: "../src/assets/IMG_20240814_121335.JPG",
       name: "Suraj Kumar",
-      role: "Web Development & Public Speaking",
+      role: "Event Management",
       mail:"suraj8757868482@gamil.com",
       phone:"8102152665",
     },
     {
       imageSrc: "../src/assets/IMG_20240128_174103585.jpg",
       name: "Thanusree",
-      role: "Event Management & Public Speaking",
+      role: "Public Speaking",
       mail:"thanusreemadhusudan@gmail.com",
       phone:"9390342185",
     },
@@ -86,7 +109,7 @@ const Card = () => {
     {
       imageSrc: "../src/assets/Shaswata.jpg",
       name: "Sashwata Ghosh",
-      role: "Video Editing & Event Management",
+      role: "Video Editing",
       mail:"shaswatanitdgpofficial@gmail.com ",
       phone:"7603065660",
     },
@@ -122,7 +145,7 @@ const Card = () => {
     {
       imageSrc: "../src/assets/IMG-20231104-WA0077.jpg",
       name: "Aman Shaw",
-      role: "Content Writing & Event Management",
+      role: "Event Management",
       mail:"ayushaman709@gmail.com ",
       phone:"7980271149",
     },
@@ -137,7 +160,7 @@ const Card = () => {
     {
       imageSrc: "../src/assets/IMG-20240814-WA0011.jpg",
       name: "SHAMBhabi gupta",
-      role: "Content Writing & Web Development",
+      role: "Content Writing",
       mail:"shambhabigupta24@gmail.com ",
       phone:"7810871263",
     },
@@ -151,7 +174,7 @@ const Card = () => {
     {
       imageSrc: "../src/assets/Screenshot_2024-08-14-19-30-36-66_6012fa4d4ddec268fc5c7112cbb265e7.jpg",
       name: "md Huzaifah alam",
-      role: "Event Management & Content Writing",
+      role: "Event Management",
       mail:"alamhuzaifah@gmail.com ",
       phone:"8910041459",
     },
@@ -173,7 +196,7 @@ const Card = () => {
   ];
   const teamMembers1 = [
     {
-      imageSrc: "../src/assets/Shubham.b8e235d6.jpg",
+      imageSrc: "../src/assets/shubahm.jpeg",
       name: "Shubham Ghosh",
       role: "President",
       mail:"ghoshshubham930@gmail.com",
@@ -195,21 +218,21 @@ const Card = () => {
     },
     
     {
-      imageSrc: "../src/assets/Vineet.5d1424b6.jpeg",
+      imageSrc: "../src/assets/vineet.jpeg",
       name: "vineet jeengar",
       role: "Treasurer",
       mail:"",
       phone:"93526 86123",
     },
     {
-      imageSrc: "../src/assets/Kens.jpeg",
+      imageSrc: "../src/assets/kens.jpeg",
       name: "KENS VenkateshWARULU",
       role: "Convenor",
       mail:"venlyndl2001@gmail.com",
       phone:"90327 95418",
     },
     {
-      imageSrc: "../src/assets/Vineet.5d1424b6.jpeg",
+      imageSrc: "../src/assets/rajeev.jpeg",
       name: "rajeev kumar yadav",
       role: "Tech Head",
       mail:"yadavrajeev1587@gmail.com",
@@ -223,7 +246,7 @@ const Card = () => {
       phone:"93252 44725",
     },
     {
-      imageSrc: "../src/assets/Sumit.8f756d48.jpg",
+      imageSrc: "../src/assets/sumit.jpeg",
       name: "Sumit Rastogi",
       role: "Fest and Sponsership Head",
       mail:"sumitrastogi2003@gmail.com",
@@ -231,14 +254,14 @@ const Card = () => {
     },
 
     {
-      imageSrc: "../src/assets/Priyal.fb8ca003.jpg",
+      imageSrc: "../src/assets/priyal.jpeg",
       name: "Priyal Bhalerao",
       role: "Event Head",
       mail:"priyalbhalerao13@gmail.com  ",
       phone:"87677 47389",
     },
     {
-      imageSrc: "../src/assets/Dharma.4ed1f5be.jpg",
+      imageSrc: "../src/assets/dharma.jpeg",
       name: "Dharma Teja",
       role: "Publicity Head",
       mail:"dharmateja3232@gmail.com",
@@ -247,7 +270,7 @@ const Card = () => {
     {
       imageSrc: "../src/assets/Basab.ec7b21ad.jpeg",
       name: "Basab Lekhri",
-      role: "Web Devlopment Head",
+      role: "Webd Head",
       mail:"bumbalekri08@gmail.com",
       phone:"93827 47295",
     },
@@ -272,7 +295,7 @@ const Card = () => {
     {
       imageSrc: "../src/assets/Mohammed Asif.565a636a.jpg",
       name: "MOHAMMED ASIF",
-      role:"",
+      role:"Creative Head",
       mail: "mdasif28049@gmail.com",
       phone:"89672 90251",
     },
@@ -300,7 +323,7 @@ const Card = () => {
     {
       imageSrc: "../src/assets/Rupali.3f1978e5.jpg",
       name: "Rupali kumari",
-      role: "Event Management",
+      role: "Content Head",
       mail:"rkumarirupali3489@gmail.com",
       phone:"91532 65972",
     },
@@ -322,7 +345,7 @@ const Card = () => {
     {
       imageSrc: "../src/assets/SAI SAHIL.b582a455.JPG",
       name: "D SAi sahil",
-      role: "Event Management",
+      role: "Deputy Treasurer",
       mail:"saisahilduvvuu1@gmail.com",
       phone:"+91 832 807 8950",
     },
@@ -403,6 +426,21 @@ const Card = () => {
     <div className="main_card">
       <div className="heading">
         TEAM RN
+      </div>
+      <div className="facad_head">
+        Faculty Advisor
+      </div>
+      <div className="facad_image">
+        {faculty.map((member, index) => (
+          <FacadCard
+            key={index}
+            imageSrc={member.imageSrc}
+            name={member.name}
+            role={member.role}
+            mail={member.mail}
+            phone={member.phone}
+          />
+        ))}
       </div>
       <div className="team_years">
         Final Years

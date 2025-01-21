@@ -13,14 +13,23 @@ const SponsorCard = ({ imageSrc, altText }) => {
 
 const Sponsors = () => {
   const sponsorData = [
-    { imageSrc: "../src/assets/logiczap.9c50e3e2.jpeg", altText: "Logiczap" },
-    { imageSrc: "../src/assets/wildstone.1c87940b.jpeg", altText: "Wildstone" },
-    { imageSrc: "../src/assets/pizza.d4b69360.jpeg", altText: "Pizza" },
-    { imageSrc: "../src/assets/redFm.6002ca9d.jpeg", altText: "Red FM" },
-    { imageSrc: "../src/assets/gg.419ad0b1.jpeg", altText: "GG" },
-    { imageSrc: "../src/assets/wileyindia.42c00e29.jpg", altText: "Wiley India" },
-    { imageSrc: "../src/assets/thementorx.d0d2795c.jpg", altText: "The MentorX" },
-    { imageSrc: "../src/assets/hoverrobotix.7590a3c6.jpg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/wildstone.1c87940b.jpeg", altText: "GG" },
+    { imageSrc: "../src/assets/images (5).jpg", altText: "The MentorX" },
+    { imageSrc: "../src/assets/mentorx.jpg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/revup.jpeg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/redFm.jpg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/teachnook.jpeg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/dominos.jpg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/moorve.jpeg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/jambo.jpeg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/IMG-20250117-WA0022[1].jpg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/sponserx.jpg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/citygym.jpeg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/lgcybaw.jpg-300x300.jpg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/londonbakery.jpeg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/lapinoz.jpg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/chicago.jpg", altText: "Hoverrobotix" },
+    { imageSrc: "../src/assets/adda.jpg", altText: "Hoverrobotix" },
   ];
 
   return (

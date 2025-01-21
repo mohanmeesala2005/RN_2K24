@@ -35,9 +35,6 @@ const AboutUs = () => {
 
   return (
     <div className="aboutus">
-          <div className="heading">
-            Contact Us
-      </div>
       <div>
       <section className="contact-us-section">
       <div className="container">
@@ -46,7 +43,7 @@ const AboutUs = () => {
             <div className="image-group">
               <img 
                 src="../src/assets/rnlogo.jpg" 
-                alt="Contact Us" 
+                alt="Contact Us"  
                 className="contact-image"
               />
               <h1 className="contact-title">Contact us</h1>
@@ -65,9 +62,8 @@ const AboutUs = () => {
             <h2 className="form-title">Send Us A Message</h2>
             <input type="text" className="form-input" placeholder="Name" />
             <input type="text" className="form-input" placeholder="Email" />
-            <input type="text" className="form-input" placeholder="Phone" />
-            
-            <input type="text" className="form-input-msg" placeholder="Message" />
+            <input type="text" className="form-input" placeholder="Subject to Email" />
+            <input type="text" className="form-input-msg" placeholder="Your Message" />
             <button className="form-button">Send</button>
           </div>
         </div>

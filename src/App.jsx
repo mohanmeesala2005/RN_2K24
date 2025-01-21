@@ -1,9 +1,6 @@
 import React from "react";
 import {BrowserRouter,Routes,Route } from 'react-router-dom'
-import { useState } from 'react'
 import Navbar from './components/navbar'
-import AboutUs from './components/aboutus'
-
 import Home from './pages/home'
 import Sponsers from './components/sponsers'
 import Footer from './components/footer'
@@ -11,7 +8,6 @@ import Preloader from './components/preloader'
 import SliderComponent from "./components/SliderComponent"
 import './App.css'
 import './index.css'
-
 import Tabs from "./components/Tabs";
 import ProfileCard from "./components/ProfileCard";
 

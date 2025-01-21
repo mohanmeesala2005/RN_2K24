@@ -200,3 +200,9 @@ body {
 .contact-form {
   grid-area: contact-form;
 }
+
+@media (max-width:468px) {
+  .contact-form-container{
+    margin-top: 100px;
+  } 
+}

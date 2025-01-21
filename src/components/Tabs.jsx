@@ -58,35 +58,34 @@ const Tabs = () => {
 
   return (
     <section className="page">
-      <section>
-        <ul className="tabs-controls">
-          {tabs.map((label, index) => (
-            <li className="tabs-controls__item" key={index}>
-              <a
-                href="#"
-                className={`tabs-controls__link ${activeTab === index + 1 ? 'tabs-controls__link--active' : ''}`}
-                onClick={(e) => handleTabClick(e, index + 1)}
-              >
-                {label}
-              </a>
-            </li>
+  <section>
+    <ul className="tabs-controls">
+      {tabs.map((label, index) => (
+        <li className="tabs-controls__item" key={index}>
+          <a
+            href="#"
+            className={`tabs-controls__link ${activeTab === index + 1 ? 'tabs-controls__link--active' : ''}`}
+            onClick={(e) => handleTabClick(e, index + 1)}
+          >
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+  <section className="cards-container">
+    {tabs.map((label, index) => (
+      <div className={`card ${activeTab === index + 1 ? 'card--current' : 'hidden'}`} id={index + 1} key={index}>
+        <h1 className="mem">{label}</h1>
+        <ul>
+          {batchMembers[label].map((member, idx) => (
+            <li key={idx}>{member}</li>
           ))}
         </ul>
-      </section>
-      <section className="cards-container">
-        {tabs.map((label, index) => (
-          <div className={`card ${activeTab === index + 1 ? 'card--current' : ''}`} id={index + 1} key={index}>
-            <h1 className='mem'>{label}</h1>
-          
-            <ul>
-              {batchMembers[label].map((member, idx) => (
-                <li key={idx}>{member}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </section>
-    </section>
+      </div>
+    ))}
+  </section>
+</section>
   );
 };
 

@@ -1,14 +1,14 @@
 import React from 'react';
-import './contact``.css'; // Import your CSS file
+import './contact.css'; // Import your CSS file
 
 const ContactForm = () => {
   return (
     <div className="contact-form-container">
       <div className="contact-us">
         <div className="contact-header">
-          <h1>&#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;CONTACT US</h1>
+          <h1>CONTACT US</h1>
         </div>
-        <div className="social-bar">
+        <div className="social-bar"> 
           <ul>
             <li><i className="fab fa-facebook-f"></i></li>
             <li><i className="fab fa-twitter"></i></li>

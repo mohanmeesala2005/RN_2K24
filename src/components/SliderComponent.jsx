@@ -2,29 +2,61 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './SliderComponent.scss';
+import './SliderComponent.css';
 
 // Reusable SliderContent component
 const SliderContent = ({ number, title, description, imageSrc, altText }) => (
   <div className="slider__content">
     <div className="slider__text">
-      <span>{number}</span>
       <h3 className="event_title" >{title}</h3>
       <p>{description}</p>
     </div>
     <figure className="slider__image">
-      <img src={imageSrc} alt={altText} />
+      <img className="imaeg" src={imageSrc} alt={altText} />
     </figure>
   </div>
 );
 
-const AppleSlider = () => {
+const SliderComp = () => {
   const settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     fade: true,
   };
+
+  const sliderDataWaveCraze = [
+    {
+      number: "1",
+      title: "WAVE CRAZE",
+      imageSrc: "../src/assets/wavecraze.jpeg",
+      altText: "The Producers",
+    },
+    {
+      number: "2",
+      title: "COMEDY NIGHT",
+      imageSrc: "../src/assets/comedynight.jpeg",
+      altText: "The Producers",
+    },
+    {
+      number: "3",
+      title: "RHYTHMIC MOMENTS",
+      imageSrc: "../src/assets/music.jpeg",
+      altText: "The Size",
+    },
+    {
+      number: "4",
+      title: "TALENT X",
+      imageSrc: "../src/assets/talentx.jpeg",
+      altText: "The Time",
+    },
+    {
+      number: "5",
+      title: "GLAM IT UP",
+      imageSrc: "../src/assets/rampwalk.jpeg",  
+      altText: "The Time",
+    },
+  ];
 
   const sliderDataEvents = [
     {
@@ -34,27 +66,15 @@ const AppleSlider = () => {
       altText: "The Producers",
     },
     {
-      number: "2",
-      title: "RN JUKEBOX",
-      imageSrc: "../src/assets/jukebox.98e9ff7c.jpg",
-      altText: "The Producers",
-    },
-    {
       number: "3",
       title: "EVENTS IN RECSTACY",
       imageSrc: "../src/assets/EVENTS IN RECSTACY.1f5f8103.jpg",
       altText: "The Size",
     },
     {
-      number: "4",
-      title: "FUNTASTIC",
-      imageSrc: "../src/assets/funtastic.a556059c-2.jpg",
-      altText: "The Time",
-    },
-    {
-      number: "5",
+      number: "7",
       title: "KHOL-E-DIL",
-      imageSrc: "../src/assets/kholedil.2411a1e7.jpg",
+      imageSrc: "../src/assets/kholedl.jpeg",
       altText: "The Time",
     },
     {
@@ -72,7 +92,7 @@ const AppleSlider = () => {
     {
       number: "8",
       title: "MOVIE MYSTICS",
-      imageSrc: "../src/assets/moviemystics.986c44df.jpg",
+      imageSrc: "../src/assets/moviem.jpeg",
       altText: "The Time",
     },
     {
@@ -83,8 +103,8 @@ const AppleSlider = () => {
     },
     {
       number: "10",
-      title: "SHAAM-E-NOOR",
-      imageSrc: "../src/assets/shaamenoor.0d2ad4e7-2.jpg",
+      title: "LIME LIGHT",
+      imageSrc: "../src/assets/limelite.jpg",
       altText: "The Time",
     },
     {
@@ -93,7 +113,6 @@ const AppleSlider = () => {
       imageSrc: "../src/assets/voice_it_out.f3d1fccb.jpg",
       altText: "The Time",
     },
-    // Add more event data as needed
   ];
 
   const sliderDataGallery = [
@@ -157,11 +176,26 @@ const AppleSlider = () => {
       imageSrc: "../src/assets/success_stories.a2482b19.jpeg",
       altText: "The Time",
     },
-    // Add more gallery data as needed
   ];
 
   return (
+    
     <div className="slider__wrapper">
+      <div className="heading">
+        <p>WAVE CRAZE</p>
+      </div>
+      <Slider {...settings} className="slider">
+        {sliderDataWaveCraze.map((item, index) => (
+          <SliderContent
+            key={index}
+            number={item.number}
+            title={item.title}
+            description={item.description}
+            imageSrc={item.imageSrc}
+            altText={item.altText}
+          />
+        ))}
+      </Slider>
       <div className="heading">
         <p>EVENTS</p>
       </div>
@@ -197,4 +231,4 @@ const AppleSlider = () => {
   );
 };
 
-export default AppleSlider;
+export default SliderComp;
