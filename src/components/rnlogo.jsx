@@ -4,7 +4,7 @@ import './rnlogo.css'
 const rnlogo = () => {
   return (
     <div className="main_page">
-      <img className="img" src="./src/assets/rnlogo.jpg"></img>
+      <img className="img" src="./assets/rnlogo.jpg"></img>
       <div className="main_about">
         <div className="heading">
           RADIO NITROZ
