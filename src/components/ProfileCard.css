@@ -310,3 +310,15 @@
 	color: #fff;
 	background: rgba(255, 255, 255, 0);
   }
+
+  @media (max-width:468px){
+	.main_card{
+		margin-top: 50px;
+	}
+	.heading p{
+		font-size: 4vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+  }

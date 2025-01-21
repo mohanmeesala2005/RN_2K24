@@ -7,7 +7,7 @@ const rnlogo = () => {
       <img className="img" src="./assets/rnlogo.jpg"></img>
       <div className="main_about">
         <div className="heading">
-          RADIO NITROZ
+          <p>RADIO NITROZ</p>
         </div>
         <div className='main_cont' >
             Hola Amigos!! And Welcome to the vibrant and colourful world of Radio NITroz,

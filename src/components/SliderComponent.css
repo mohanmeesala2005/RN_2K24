@@ -159,6 +159,7 @@
 
   .heading{
     margin-top: -1em;
+    font-size: 6vh;
   }
   .slider__text{
     height: 55%;
@@ -179,7 +180,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    font-size: 6vh;
   }
 }
 
@@ -203,5 +204,12 @@
     flex-direction: column;
     font-weight:250;
     font-size: 0.75em;
+  }
+  .heading p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 3vh;
   }
 }

@@ -425,7 +425,7 @@ const Card = () => {
   return (
     <div className="main_card">
       <div className="heading">
-        TEAM RN
+        <p>TEAM RN</p>
       </div>
       <div className="facad_head">
         Faculty Advisor
