@@ -42,7 +42,7 @@ const AboutUs = () => {
           <div className="image-container">
             <div className="image-group">
               <img 
-                src="../src/assets/rnlogo.jpg" 
+                src="./assets/rnlogo.jpg" 
                 alt="Contact Us"  
                 className="contact-image"
               />

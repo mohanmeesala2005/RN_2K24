@@ -16,9 +16,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <img className="navbar_logo" src="./src/assets/rnlogowhite.png" alt="logo" />
+        <img className="navbar_logo" src="./assets/rnlogowhite.png" alt="logo" />
         <button className="navbar-toggler" onClick={toggleNavbar}>
-          <img className="toggler_menu" src="../src/assets/menu-line.png" alt="Menu Icon" />
+          <img className="toggler_menu" src="./assets/menu-line.png" alt="Menu Icon" />
         </button>
         <ul className={`navbar-list ${isOpen ? 'open' : ''}`}>
           <li className="navbar-item">
