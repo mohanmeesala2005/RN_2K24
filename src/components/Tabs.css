@@ -16,6 +16,11 @@ h1 {
 }
 
 /* Tabs */
+
+.page{
+  padding: 25px;
+}
+
 .tabs-controls {
   position: relative;
   z-index: 10;
