@@ -357,7 +357,7 @@ const Card = () => {
       phone:"+91 6289 762 949",
     },
     {
-      imageSrc: "./assets/BeautyPlus Cam_20240504084809127_save.jpg",
+      imageSrc: "./assets/raj.jpg",
       name: "SK RAJ ALI",
       role: "Sr Coordinator",
       mail:"skrajali062003@gmail.com",

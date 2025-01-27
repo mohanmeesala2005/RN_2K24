@@ -17,10 +17,10 @@ const Footer = () => {
           <a href="https://www.youtube.com/@RadioNitroz"><i class="fa-brands fa-youtube"></i></a>
           </div>
           <div className="social">
-          <a href="facebook.com/radionitroz.nitdgp"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.facebook.com/radionitroz.nitdgp"><i class="fa-brands fa-facebook"></i></a>
           </div>
           <div className="social">
-          <a href="instagram.com/radionitroz.nitdgp"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.instagram.com/radionitroz.nitdgp/"><i class="fa-brands fa-instagram"></i></a>
           </div> 
         </div>
       </div>

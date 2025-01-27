@@ -1,3 +1,6 @@
+.main_card{
+	margin-top: 5vh;
+}
 .heading {
 	text-align: center;
 	background: linear-gradient(to right, rgb(148, 0, 247), rgb(100, 0, 249));
@@ -313,7 +316,7 @@
 
   @media (max-width:468px){
 	.main_card{
-		margin-top: 50px;
+		margin-top: 12.5vh;
 	}
 	.heading p{
 		font-size: 4vh;
