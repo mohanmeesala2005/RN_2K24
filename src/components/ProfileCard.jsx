@@ -240,7 +240,7 @@ const Card = () => {
     },
     {
       imageSrc: "./assets/Aniket_.8b6200b3.jpg",
-      name: "Ainket Kamble",
+      name: "Aniket Kamble",
       role: "Logistics Head",
       mail:"aniketkamble9192@gmail.com",
       phone:"93252 44725",
@@ -394,7 +394,7 @@ const Card = () => {
     },
     {
       imageSrc: "./assets/IMG_20230918_144643.jpg",
-      name: "Sivala Rishitha",
+      name: "Sivala Rishita",
       role: "Sr Coordinator",
       mail:"sivalarishita@gmail.com",
       phone:"+91 90634 62911",
